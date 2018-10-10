@@ -16,8 +16,13 @@ A quick summary of changes made:
 *  add biosdevname binary for Vagrant networking
 *  add VirtualBox guest exensions
 
-Download current image from:
-http://tteoscore1-rgw-vip.target.com/swift/v1/vagrant_boxes
+OSX Prereqs
+-----------
+
+* VirtualBox
+* Vagrant
+* brew install qemu
+
 
 Build/Deploy
 ------------
@@ -26,7 +31,7 @@ Build/Deploy
 
 2. Create the vagrant box from the qcow2.
 <PRE>
-git clone git@git.target.com:z013s06/rhel_vagrant_box.git
+git clone https://github.com/tkilloren/rhel_kvm2vagrant.git
 cd rhel_vagrant_box
 cp ~/Downloads/${imagename} ./
 ./CreateVagrantBox.sh ${imagename}
