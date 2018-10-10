@@ -1,0 +1,7 @@
+*.iso
+*.qcow2
+*.box
+*.vdi
+*.raw
+data/
+Vagrantfile
